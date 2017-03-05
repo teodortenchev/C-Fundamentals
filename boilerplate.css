@@ -1,0 +1,109 @@
+*{margin:0;padding:0;}
+
+body {
+	
+		
+		font-family:Helvetica, Arial, sans-serif;
+	
+		}
+		
+		.left-border {
+			
+			border-left: 1px solid #cccccc;
+			
+		}
+
+		.right-border {
+			border-right: 1px solid #cccccc;
+		}
+		
+		#top-bar {
+			
+			width:1000px;
+			margin: 0 auto;
+			height:45px;
+			
+		}
+		
+		#logo {
+			
+			margin-top:8px;
+			margin-left: 4px;
+			padding-right: 8px;
+			float:left;
+			
+			
+		}
+		
+		#signing {
+			
+			margin-right:68px;
+			height:inherit;
+			float: left;
+			
+	
+		}
+		#sign-img {
+	
+			margin: 9px 4px auto 12px;
+			float:left;
+		}
+		.bold-headers {
+	
+			font-weight:bold;
+			font-size:13px;
+		}
+	
+		#signspan {
+			
+			padding-top:13px;
+			float:left;
+		}
+			
+		#notification-button {
+
+			padding-right: 8px;
+			float:left;
+		}
+
+		#custom-border {
+	
+			margin-left:10px;
+			float:left;
+			height: 43px;
+		}
+
+		#bell {
+			margin:10px 3px;
+			float:left;
+		}
+
+
+		
+
+	
+		
+#top-bar-container{float:left;}
+#top-links>li{height:30px;list-style: none; float: left; padding-top:13px;}
+#News{padding-left: 12px; padding-right: 12px;}
+#Sport{padding-left: 12px; padding-right: 12px;}
+#Weather{padding-left: 12px; padding-right: 11px;}
+#iPlayer{padding-left: 12px; padding-right: 12px;}
+#TV{padding-left:12px; padding-right:12px;}
+#Radio{padding-left:12px; padding-right:12px;}
+#More{padding-left: 12px; padding-right: 44px;}
+#down-arrow{width:4px; float: right;}
+#down-arrow>img{padding-left:23px;}
+#search-bar{padding-left: 12px; padding-top:8px; float: left;}
+#search-bar>input{background-color:#E4E4E4; border: none; height: 23px; float: left; font-weight: bold;}
+
+#middle-top-bar{background-color:#BB1919; width: 100%;height: 58px;margin-top: -5px; float:left; }
+#middle-container{width: 1000px; margin:0 auto; padding-right: 17px;}
+#newsimage{margin-left:0px; float: left;}
+#find-box{border: 1px solid white; height: 28px; width: 170px; float: right; margin-top: 20px; margin-right: 19px;}
+#findnews{font-style: normal; font-size: 19px; color: white; font-weight: heavy; padding-left: 10px; padding-top: 3px; float: left;}
+#findnews:hover{text-decoration: underline;}
+#top3rd-bar {background-color:#A91717; width: 100%;height: 35px;margin-top: 0px; float:left; color: white; font-size: 14px;}
+#thirdcontainer{width: 1000px; margin:0 auto;}
+#bottom-links>li{height: 15px; list-style:none; float: left; margin-top: 10px;}
+.universal-position {margin-left: 10px;padding-left:15px;}
