@@ -1,11 +1,3 @@
-/*
- * Created by SharpDevelop.
- * User: c09190a
- * Date: 7/11/2017
- * Time: 11:38 AM
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
 using System;
 
 namespace Arrays
@@ -22,7 +14,27 @@ namespace Arrays
 			int[] knownNumbers = { 1 , 2 , 3, 4, 5 };
 			//This can also be written out like int[] knownNumbers = new int[] { 1, 2, 3, ...}
 			
+			
+			//
+			
 			Console.WriteLine("The length of this array is " + knownNumbers.Length);
+			Console.WriteLine("Its contents are the following numbers: ");
+			
+			for (int i = 0; i < knownNumbers.Length; i++) {
+				Console.WriteLine(knownNumbers[i]);
+			}
+			
+			Console.WriteLine("Now we will reverse them below using a simple for loop and by storing them in a new array: ");
+			
+			int[] reverseNumbers = new int[knownNumbers.Length];
+			
+			for (int i = 0; i < knownNumbers.Length; i++) {
+				reverseNumbers[i] = knownNumbers[knownNumbers.Length - 1 - i];
+				Console.WriteLine(reverseNumbers[i]);
+				
+			}
+				
+				
 			//assigns values to the array. Could have been done when initializing
 			
 			
@@ -45,8 +57,29 @@ namespace Arrays
 				
 			}
 			
+			//now to reverse this and store the reversed order one way is with a loop
+			Console.WriteLine("----------------------------");
+			string[] reverseDays = new string[daysOfWeek.Length];
+			
+			for (int i = 0; i < daysOfWeek.Length; i++) {
+				
+				reverseDays[i] = daysOfWeek[daysOfWeek.Length - 1 -i];
+				Console.WriteLine(reverseDays[i]);
+			}
+			
+			Array.Reverse(knownNumbers);
+			PrintIndexAndValues(knownNumbers);
+			
+	
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
+		
+		public static void PrintIndexAndValues( Array myArray )  {
+      			for ( int i = myArray.GetLowerBound(0); i <= myArray.GetUpperBound(0); i++ )
+         		Console.WriteLine( "\t[{0}]:\t{1}", i, myArray.GetValue( i ) );
+		}
+		
 	}
+	
 }
