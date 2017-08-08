@@ -1,0 +1,15 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int number = int.Parse(Console.ReadLine());
+		string hexValue = number.ToString("X");
+		
+		Console.WriteLine(hexValue);
+		
+		string binary = Convert.ToString(number, 2);
+		Console.WriteLine(binary);
+	}
+}
