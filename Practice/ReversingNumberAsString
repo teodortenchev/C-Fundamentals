@@ -1,0 +1,32 @@
+using System;
+
+
+namespace ReverseNumberAsString
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            decimal number = decimal.Parse(Console.ReadLine());
+            Console.WriteLine(ReverseNumber(number));
+            
+
+        }
+
+        static string ReverseNumber(decimal number)
+        {
+            string numberAsString = number.ToString();
+            string reversedNumberString = "";
+            int length = numberAsString.Length - 1;
+
+            while (length >= 0)
+            {
+                reversedNumberString = reversedNumberString + numberAsString[length];
+                length--;
+            }
+
+            return reversedNumberString;
+        }
+        
+    }
+}
